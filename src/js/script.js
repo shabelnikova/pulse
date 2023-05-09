@@ -76,7 +76,7 @@ document.querySelector('.next').addEventListener('click', function() {
  
   $('.button_mini').each(function(i) {
     $(this).on('click', function() {
-      $('#order.modal-window__descr').text($('.catalog-item__subtitle').eq(i).text());
+      $('#order .modal-window__descr').text($('.catalog-item__subtitle').eq(i).text());
       $('.overlay, #order').fadeIn('slow');
     });
   });
